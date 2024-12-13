@@ -18,7 +18,7 @@ export class QuizService {
     const token = localStorage.getItem('accessToken');
     const headers = new HttpHeaders({ 'Authorization': `Bearer ${token}` });
 
-    return this.http.post<any>('http://127.0.0.1:8000/api/quiz/submit', { answers }, { headers });
+    return this.http.post<any>('http://127.0.0.1:8000/api/quiz', { answers }, { headers });
   }
 
   setQuizResult(result: any) {
