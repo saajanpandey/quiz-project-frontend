@@ -1,0 +1,15 @@
+<div *ngIf="result">
+    <h4>{{ result }}</h4>
+    <div *ngFor="let item of feedback">
+      <p>
+        <strong>Question {{ item.id }}:</strong>
+        <span [ngClass]="{ correct: item.is_correct, incorrect: !item.is_correct }">
+          Your answer: {{ item.selected_option }}
+        </span>
+        <span *ngIf="!item.is_correct">
+          (Correct answer: {{ item.correct_option }})
+        </span>
+      </p>
+    </div>
+  </div>
+  
