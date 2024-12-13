@@ -14,6 +14,7 @@ import { HttpClientModule } from  '@angular/common/http';
 import { RegisterComponent } from './register/register.component';
 import { ResultComponent } from './result/result.component';
 import { QuizService } from './service/quiz.service';
+import { AuthGuard } from './auth.guard';
 
 
 
@@ -35,7 +36,7 @@ import { QuizService } from './service/quiz.service';
     HttpClientModule,
     MatRadioModule,
   ],
-  providers: [QuizService],
+  providers: [QuizService, AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
