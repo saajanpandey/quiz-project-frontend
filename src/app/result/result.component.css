@@ -1,67 +1,68 @@
 h2 {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    text-align: center;
-    color: #333;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
 }
 
 .result-overview {
-    background-color: #f9f9f9;
-    padding: 15px;
-    border-radius: 5px;
-    margin-bottom: 20px;
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 5px;
+  width: 50%; /* Specify a width */
+  margin: 0 auto;
 }
 
 .result-overview h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
-    color: #555;
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #555;
 }
 
 .result-overview p {
-    margin: 5px 0;
-    font-size: 16px;
+  margin: 5px 0;
+  font-size: 16px;
 }
 
 .detailed-results {
-    background-color: #f1f1f1;
-    padding: 15px;
-    border-radius: 5px;
-    margin-bottom: 20px;
+  background-color: #f1f1f1;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
 }
 
 .detailed-results h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
-    color: #555;
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #555;
 }
 
 .detailed-results ul {
-    list-style-type: none;
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
 
 .detailed-results li {
-    margin-bottom: 10px;
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
 }
 
 .retry-button {
-    display: block;
-    width: 200px;
-    padding: 10px;
-    background-color: #4CAF50;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 5px;
-    margin: 0 auto;
-    cursor: pointer;
-    border: none;
+  display: block;
+  width: 200px;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 0 auto;
+  cursor: pointer;
+  border: none;
 }
 
 .retry-button:hover {
-    background-color: #45a049;
+  background-color: #45a049;
 }
