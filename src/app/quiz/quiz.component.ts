@@ -37,6 +37,7 @@ export class QuizComponent implements OnInit {
 
   onAnswerChange(questionId: number, selectedOption: string): void {
     this.selectedAnswers[questionId] = selectedOption;
+    console.log(this.selectedAnswers[questionId] = selectedOption)
   }
 
   onSubmit(): void {
@@ -49,7 +50,7 @@ export class QuizComponent implements OnInit {
     }));
 
     // Submit answers to backend
-    this.http.post('http://127.0.0.1:8000/api/results', { answers }, {
+    this.http.post('http://127.0.0.1:8000/api/quiz', { answers }, {
       headers: {
         Authorization: `Bearer ${token}`
       }
@@ -57,26 +58,14 @@ export class QuizComponent implements OnInit {
       next: (response: any) => {
         console.log('Quiz submitted successfully', response);
         // Navigate to the result component with the response data
+        localStorage.setItem('quizResults', JSON.stringify(response));
         this.router.navigate(['/result'], { state: { quizResults: response } });
       },
       error: (error) => {
         console.error('Failed to submit quiz', error);
       }
     });
-  
-  // Mocked response for demonstration
-  // const mockedResponse = {
-  //   score: 1,
-  //   percentage: 20.0,
-  //   message: "Please try again!"
-  // };
-
-  // Directly use mocked response to simulate submission success
-  // console.log('Quiz submitted successfully', mockedResponse);
-  // // Navigate to the result component with the mocked response
-  // this.router.navigate(['/result'], { state: { quizResults: mockedResponse } });
-  
-  
+   
   }
 
   onLogout(): void {

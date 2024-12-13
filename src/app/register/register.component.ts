@@ -16,7 +16,7 @@ export class RegisterComponent {
   constructor(private fb: FormBuilder, private http: HttpClient, private router: Router) {
     this.registerForm = this.fb.group({
       username: ['', Validators.required],
-      password: ['', Validators.required, Validators.minLength(6)],
+      password: ['', Validators.required],
       first_name: ['', Validators.required],
       last_name: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]]
@@ -32,8 +32,8 @@ export class RegisterComponent {
           console.log('Registration successful', response);
           this.successMessage = 'Registration successful! Redirecting to login...';
           setTimeout(() => {
-            this.router.navigate(['/login']); // Navigate to the login page
-          }, 2000); // Add a 2-second delay to show success message
+            this.router.navigate(['/']); 
+          }, 2000); 
         },
         error: (error) => {
           console.error('Registration failed', error);

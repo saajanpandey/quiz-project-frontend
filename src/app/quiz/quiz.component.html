@@ -17,22 +17,22 @@
     <ol class="options-list">
       <li>
         <label class="option-label">
-          <input type="radio" name="question-{{ question.id }}" value="option_1" (change)="onAnswerChange(question.id, 'option_1')" /> {{ question.option_1 }}
+          <input type="radio" name="question-{{ question.id }}" value="option_1" (change)="onAnswerChange(question.id, question.option_1)" /> {{ question.option_1 }}
         </label>
       </li>
       <li>
         <label class="option-label">
-          <input type="radio" name="question-{{ question.id }}" value="option_2" (change)="onAnswerChange(question.id, 'option_2')" /> {{ question.option_2 }}
+          <input type="radio" name="question-{{ question.id }}" value="option_2" (change)="onAnswerChange(question.id, question.option_2)" /> {{ question.option_2 }}
         </label>
       </li>
       <li>
         <label class="option-label">
-          <input type="radio" name="question-{{ question.id }}" value="option_3" (change)="onAnswerChange(question.id, 'option_3')" /> {{ question.option_3 }}
+          <input type="radio" name="question-{{ question.id }}" value="option_3" (change)="onAnswerChange(question.id, question.option_3)" /> {{ question.option_3 }}
         </label>
       </li>
       <li>
         <label class="option-label">
-          <input type="radio" name="question-{{ question.id }}" value="option_4" (change)="onAnswerChange(question.id, 'option_4')" /> {{ question.option_4 }}
+          <input type="radio" name="question-{{ question.id }}" value="option_4" (change)="onAnswerChange(question.id, question.option_4)" /> {{ question.option_4 }}
         </label>
       </li>
     </ol>

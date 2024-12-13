@@ -1,67 +1,67 @@
-.result-container {
-    padding: 20px;
-    max-width: 600px;
-    margin: 0 auto;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .result-container h2 {
-    text-align: center;
-    margin-bottom: 20px;
+h2 {
     font-size: 24px;
-    color: #333;
-  }
-  
-  .result-container p {
-    font-size: 16px;
-    margin: 10px 0;
-    color: #555;
-  }
-  
-  .result-overview, .detailed-results {
+    font-weight: bold;
     margin-bottom: 20px;
-  }
-  
-  .result-overview h3, .detailed-results h3 {
+    text-align: center;
+    color: #333;
+}
+
+.result-overview {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.result-overview h3 {
     font-size: 20px;
-    margin-bottom: 15px;
-    color: #007bff;
-  }
-  
-  .detailed-results ul {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.result-overview p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.detailed-results {
+    background-color: #f1f1f1;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.detailed-results h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.detailed-results ul {
     list-style-type: none;
     padding: 0;
-  }
-  
-  .detailed-results li {
-    padding: 15px;
+}
+
+.detailed-results li {
     margin-bottom: 10px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-  }
-  
-  .detailed-results li p {
-    margin: 5px 0;
-    color: #333;
-  }
-  
-  .retry-button {
-    display: block;
-    width: 100%;
     padding: 10px;
-    background-color: #28a745;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
+    border-bottom: 1px solid #ddd;
+}
+
+.retry-button {
+    display: block;
+    width: 200px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
     text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0 auto;
     cursor: pointer;
-    font-size: 16px;
-  }
-  
-  .retry-button:hover {
-    background-color: #218838;
-  }
-  
+    border: none;
+}
+
+.retry-button:hover {
+    background-color: #45a049;
+}
