@@ -1,9 +1,21 @@
 <h2>Hi {{username}} your Quiz Results</h2>
 <div class="result-overview">
-    <h3>Overall Results</h3>
-    <p><strong>Score:</strong> {{ score }}</p>
-    <p><strong>Percentage:</strong> {{ scorePercentage }}%</p>
-    <p><strong>Message:</strong>{{ scoreMessage }}</p>
+  <h3>Overall Results</h3>
+  <p><strong>Score:</strong> {{ score }}/5</p>
+  <p><strong>Percentage:</strong> {{ scorePercentage }}%</p>
+  <p><strong>Message:</strong>{{ scoreMessage }}</p>
+</div>
+<br>
+<div class="detailed-results">
+  <h3>Detailed Results</h3>
+  <ul>
+    <li *ngFor="let result of results.results">
+      <p><strong>Score:</strong> {{ result.score }}/5</p>
+    </li>
+  </ul>
+  <p><strong>Average:</strong> {{ averageScore }}</p>
+  <p><strong>Highest Score:</strong> {{ highestScore }}</p>
+  <p><strong>Lowest Score:</strong>{{ lowestScore }}</p>
 </div>
 <br>
 <button (click)="onRetry()" class="retry-button">Retry Quiz</button>
